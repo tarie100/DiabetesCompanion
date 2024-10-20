@@ -15,7 +15,7 @@ const Motivation = () => {
   };
 
   return (
-    <Card className="mb-3">
+    <Card className="mb-3 bg-transparent">
       <Card.Body>
         <Card.Title>Motivation</Card.Title>
         <Card.Text>{getRandomQuote()}</Card.Text>

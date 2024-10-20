@@ -2,8 +2,6 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { setReminder } from '../actions/reminderActions';
 import { Button, Card } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 const ExerciseReminder = () => {
   const dispatch = useDispatch();
@@ -13,7 +11,7 @@ const ExerciseReminder = () => {
   };
 
   return (
-    <Card className="mb-3">
+    <Card className="mb-3 bg-transparent">
       <Card.Body>
         <Card.Title>Exercise Reminder</Card.Title>
         <Button variant="primary" onClick={handleSetReminder}>Set Exercise Reminder</Button>

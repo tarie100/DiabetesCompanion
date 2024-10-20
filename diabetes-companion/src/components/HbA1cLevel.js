@@ -13,10 +13,10 @@ const HbA1cLevel = () => {
   };
 
   return (
-    <Card className="mb-3">
+    <Card className="mb-3 bg-transparent">
       <Card.Body>
         <Card.Title>HbA1c Level</Card.Title>
-        <Form>
+        <Form className="bg-transparent">
           <Form.Group controlId="formHba1c">
             <Form.Label>Enter your HbA1c level</Form.Label>
             <Form.Control

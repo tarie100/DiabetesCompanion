@@ -11,7 +11,7 @@ const WaterReminder = () => {
   };
 
   return (
-    <Card className="mb-3">
+    <Card className="mb-3 bg-transparent">
       <Card.Body>
         <Card.Title>Water Reminder</Card.Title>
         <Button variant="info" onClick={handleSetReminder}>Set Water Reminder</Button>

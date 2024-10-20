@@ -1,8 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { setReminder } from '../actions/reminderActions';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Button, Card } from 'react-bootstrap';
 
 const DietReminder = () => {
   const dispatch = useDispatch();
@@ -12,10 +11,12 @@ const DietReminder = () => {
   };
 
   return (
-    <div>
-      <h2>Diet Reminder</h2>
-      <button onClick={handleSetReminder}>Set Diet Reminder</button>
-    </div>
+    <Card className="mb-3 bg-transparent">
+      <Card.Body>
+        <Card.Title>Diet Reminder</Card.Title>
+        <Button variant="success" onClick={handleSetReminder}>Set Diet Reminder</Button>
+      </Card.Body>
+    </Card>
   );
 };
 

@@ -11,14 +11,16 @@ import Motivation from './components/Motivation';
 const App = () => {
   return (
     <Provider store={store}>
-      <Container className="mt-5">
-        <h1 className="text-center mb-4">Diabetes Companion App</h1>
-        <ExerciseReminder />
-        <DietReminder />
-        <WaterReminder />
-        <HbA1cLevel />
-        <Motivation />
-      </Container>
+      <div className="background-section">
+        <Container className="mt-5">
+          <h1 className="text-center mb-4">Diabetes Companion App</h1>
+          <ExerciseReminder />
+          <DietReminder />
+          <WaterReminder />
+          <HbA1cLevel />
+          <Motivation />
+        </Container>
+      </div>
     </Provider>
   );
 };
